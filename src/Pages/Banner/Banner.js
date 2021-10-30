@@ -29,7 +29,7 @@ const Banner = () => {
         </div>
         <div className="text-start">
           <img
-            className="ms-5 col-9 banner-img"
+            className="ms-5 col-4 side-img"
             src="https://image.freepik.com/free-vector/take-away-concept-illustration_114360-2982.jpg"
             alt=""
           />
