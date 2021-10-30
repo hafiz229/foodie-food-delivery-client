@@ -1,0 +1,5 @@
+.reviews {
+  display: grid;
+  grid-column-gap: 40px;
+  grid-row-gap: 10px;
+}
