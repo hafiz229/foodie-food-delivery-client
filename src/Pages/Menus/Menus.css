@@ -1,0 +1,18 @@
+.menu-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+.menu-img {
+  height: 200px;
+}
+.menu-item {
+  font-weight: 700;
+  font-size: x-large;
+}
+
+.menu-border:hover {
+  background-color: rgb(93, 63, 211);
+  color: white;
+}
