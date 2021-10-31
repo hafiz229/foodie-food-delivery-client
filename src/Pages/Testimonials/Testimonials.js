@@ -4,7 +4,7 @@ import "./Testimonials.css";
 const Testimonials = () => {
   return (
     <div>
-      <h1 className="py-3">Testimonials</h1>
+      <h1 className="fw-bold my-3">Testimonials</h1>
       <div className="container reviews px-3 d-lg-flex justify-content-center align-items-center">
         <div class="card shadow" style={{ width: "18rem" }}>
           <img

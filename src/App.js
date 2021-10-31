@@ -3,6 +3,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home/Home";
 import Header from "./Pages/Header/Header";
+import Booking from "./Pages/Booking/Booking";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/home">
             <Home></Home>
+          </Route>
+          <Route path="/booking/:serviceId">
+            <Booking></Booking>
           </Route>
         </Switch>
       </Router>

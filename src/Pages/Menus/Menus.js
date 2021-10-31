@@ -4,7 +4,7 @@ import "./Menus.css";
 const Menus = () => {
   return (
     <div>
-      <h1 className="py-3">Our Menus</h1>
+      <h1 className="fw-bold my-3">Our Menus</h1>
       <div className="container menu-container px-3 d-lg-flex justify-content-center align-items-center">
         <div class="card menu-border shadow" style={{ width: "18rem" }}>
           <img
