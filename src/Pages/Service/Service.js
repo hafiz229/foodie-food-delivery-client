@@ -4,6 +4,8 @@ import "./Service.css";
 
 const Service = ({ service }) => {
   const { _id, name, price, description, img } = service;
+  console.log(service);
+
   return (
     <div>
       <div className="service shadow">
