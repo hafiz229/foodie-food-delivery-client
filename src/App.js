@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Pages/Home/Home";
 import Header from "./Pages/Header/Header";
 import Booking from "./Pages/Booking/Booking";
+import AddService from "./Pages/AddService/AddService";
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path="/booking/:serviceId">
             <Booking></Booking>
+          </Route>
+          <Route path="/addservice">
+            <AddService></AddService>
           </Route>
         </Switch>
       </Router>

@@ -21,7 +21,7 @@ const Booking = () => {
         <div>
           <h3 className="text-center">{service.name}</h3>
           <h5 className="text-center">Price: {service.price}</h5>
-          <h5 className="text-center">Status: {service?.status}</h5>
+          <h5 className="text-center">Status: {service.status}</h5>
           <p className="w-100">{service.description}</p>
         </div>
       </div>
