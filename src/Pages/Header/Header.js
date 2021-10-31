@@ -9,7 +9,7 @@ import "./Header.css";
 const Header = () => {
   const { user, logOut } = useAuth();
   return (
-    <div>
+    <div className="fw-bold">
       <Navbar
         bg="light"
         variant="light"
@@ -50,11 +50,13 @@ const Header = () => {
                 Logout
               </Button>
             ) : (
-              <Nav.Link as={Link} to="/login">
+              <Nav.Link as={Link} to="/login" className="fw-bolder">
                 Login
               </Nav.Link>
             )}
-            <Navbar.Text>{user?.displayName}</Navbar.Text>
+            <Navbar.Text className="ms-3 fw-bolder text-black">
+              {user?.displayName}
+            </Navbar.Text>
           </Navbar.Collapse>
         </Container>
       </Navbar>
