@@ -13,16 +13,16 @@ const Booking = () => {
   }, []);
   return (
     <div>
-      <h2>{service.name} Details</h2>
+      <h2 className="fw-bold my-3">{service.name} Details</h2>
       <div className="booking container d-lg-flex align-items-center justify-content-center shadow rounded p-3">
         <div className="col-lg-6">
           <img src={service.img} alt="" />
         </div>
         <div>
-          <h3 className="text-center">{service.name}</h3>
-          <h5 className="text-center">Price: {service.price}</h5>
-          <h5 className="text-center">Status: {service.status}</h5>
-          <p className="w-100">{service.description}</p>
+          <h3 className="text-start fw-bold">{service.name}</h3>
+          <h5 className="text-start">Price: {service.price}</h5>
+          <h5 className="text-start">Status: {service.status}</h5>
+          <p className="w-100 text-start">{service.description}</p>
         </div>
       </div>
     </div>
