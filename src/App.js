@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import Header from "./Pages/Header/Header";
 import Booking from "./Pages/Booking/Booking";
 import AddService from "./Pages/AddService/AddService";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           </Route>
           <Route path="/addservice">
             <AddService></AddService>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
       </Router>
