@@ -73,10 +73,6 @@ const Booking = () => {
           {errors.email && (
             <span className="error">This field is required</span>
           )}
-          <input
-            defaultValue={service.key}
-            {...register("key", { required: true })}
-          />
 
           <input
             placeholder="Address"
@@ -85,7 +81,7 @@ const Booking = () => {
           />
           <input placeholder="Phone" defaultValue="" {...register("phone")} />
           <input
-            defaultValue="Purchased"
+            defaultValue={service.status}
             {...register("status", { required: true })}
           />
           <input

@@ -1,9 +1,7 @@
 import React from "react";
 
-const ManageOrder = ({ allorder, handleDelete, handleApprove }) => {
-  console.log(allorder);
-  const { _id, name, email, order, price, address, phone, status } = allorder;
-  console.log(allorder);
+const MyOrder = ({ myOrder, handleDelete }) => {
+  const { _id, name, email, order, price, address, phone, status } = myOrder;
   return (
     <div>
       <div className="service shadow">
@@ -20,20 +18,13 @@ const ManageOrder = ({ allorder, handleDelete, handleApprove }) => {
           <h5>
             Status: <span className="fw-bold text-dark">{status}</span>
           </h5>
-          <button
-            className="btn mb-3"
-            style={{ backgroundColor: "rgb(93, 63, 211)", color: "white" }}
-            onClick={() => handleDelete(_id)}
-          >
-            Cancel Order
-          </button>
           {status !== "approved" && (
             <button
-              className="btn ms-3 mb-3"
+              className="btn mb-3"
               style={{ backgroundColor: "rgb(93, 63, 211)", color: "white" }}
-              onClick={() => handleApprove(_id, "approved")}
+              onClick={() => handleDelete(_id)}
             >
-              Confirm Order
+              Cancel Order
             </button>
           )}
         </div>
@@ -42,4 +33,4 @@ const ManageOrder = ({ allorder, handleDelete, handleApprove }) => {
   );
 };
 
-export default ManageOrder;
+export default MyOrder;
