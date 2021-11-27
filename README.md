@@ -1,14 +1,14 @@
 # Website Name
-Foodie
+Foodie Food Delivery
 
 ## Website Link
 
-https://github.com/programming-hero-web-course1/tourism-or-delivery-website-client-side-hafiz229
+https://foodie-food-delivery.firebaseapp.com/
 
-### Website Key Points
-1. Home
-2. Services
-3. Manage All Orders
-4. Add New Services
-5. About Us
+### Features and Functionality
+1. Sing In / Sign Up with Google
+2. User Login (My Orders, Manage Orders, Place Order, Cancel Order, Approve Order, Add New Service)
+3. Fetch Services from Database
 
+### Technologies
+Firebase, React.js, Node.js, Express.js, REST API, MongoDB, React Router, React-Bootstrap, JavaScript, HTML5, CSS3, Heroku
