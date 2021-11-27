@@ -6,12 +6,14 @@ import "./AddService.css";
 const AddService = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/services", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("One Item Inserted Successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://frightening-pumpkin-71085.herokuapp.com/services", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("One Item Inserted Successfully");
+          reset();
+        }
+      });
   };
   return (
     <div className="add-service">

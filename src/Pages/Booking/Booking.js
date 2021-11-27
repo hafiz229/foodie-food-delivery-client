@@ -18,19 +18,23 @@ const Booking = () => {
   const [service, setService] = useState({});
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/orders", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Item Purchased Successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://frightening-pumpkin-71085.herokuapp.com/orders", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Item Purchased Successfully");
+          reset();
+        }
+      });
   };
   console.log(user);
   useEffect(() => {
-    fetch(`http://localhost:5000/services/${serviceId}`)
+    fetch(
+      `https://frightening-pumpkin-71085.herokuapp.com/services/${serviceId}`
+    )
       .then((res) => res.json())
       .then((data) => setService(data));
-  }, []);
+  }, [serviceId]);
   return (
     <div>
       <h2 className="fw-bold my-3">{service.name} Details</h2>
