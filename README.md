@@ -10,7 +10,7 @@ Foodie Food Delivery is an online food ordering and delivery platform launched i
 https://foodie-food-delivery.firebaseapp.com/
 
 ### Features and Functionality
-1. Sing In / Sign Up with Google
+1. Sign In / Sign Up with Google
 2. User Login (My Orders, Manage Orders, Place Order, Cancel Order, Approve Order, Add New Service)
 3. Fetch Services from Database
 
