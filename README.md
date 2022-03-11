@@ -5,9 +5,6 @@ Foodie Food Delivery
 ## Description:
 Foodie Food Delivery is an online food ordering and delivery platform launched in 2021. Users can read menus and order for food.
 
-## Website Link
-
-https://foodie-food-delivery.firebaseapp.com/
 
 ### Features and Functionality
 1. Sign In / Sign Up with Google
